@@ -21,6 +21,7 @@ Console.WriteLine(SumOfDigits(1234));
 */
 
 //Task3. Вывести все натуральные числа от M до N.
+
 /*
 void ShowNums(int m, int n)
 {
@@ -30,10 +31,11 @@ void ShowNums(int m, int n)
 
 }
 
-ShowNums(2, 8);
+ShowNums(5, 8);
 Console.WriteLine();
-ShowNums(8, 2);
+ShowNums(4, 2);
 */
+
 //Task4. Принимает два числа. Возвращает a в степени b. b может быть отр.
 
 double Power(double a, int b)
@@ -41,9 +43,9 @@ double Power(double a, int b)
   if (b > 0)
     return a * Power(a, b - 1);
   else if (b < 0)
-    return Power(a, b + 1) * (1 / a);
+    return Power(a, b + 1) / a;
   else return 1;
 }
 
 Console.WriteLine(Power(2, 2));
-Console.WriteLine(Power(2, -2));
+Console.WriteLine(Power(2, -3));
